@@ -88,21 +88,21 @@ function getCookie(cname) {
   }
   function save() {
     setCookie('pugs', WOW)
-    setCookie('click', ClickIt)
-    setCookie('youNeedIt', need)
+    setCookie('clickg', ClickIt)
+    setCookie('youNeedItg', need)
   }
   function load() {
     if (getCookie('pugs') == null == false) {
       WOW = Number(getCookie('pugs'))
     }
-    if (getCookie('click') == null == false) {
-      ClickIt = Number(getCookie('click'))
+    if (getCookie('clickg') == null == false) {
+      ClickIt = Number(getCookie('clickg'))
     }
-    if (getCookie('youNeedIt') == null == false) {
-      need = Number(getCookie('youNeedIt'))
+    if (getCookie('youNeedItg') == null == false) {
+      need = Number(getCookie('youNeedItg'))
     }
     if (getCookie('wow') == null == false) {
-      rebirth = Number(getCookie('wow'))
+      rebirth = Number(getCookie('wowg'))
     }
   }
   function rebirth() {
@@ -111,7 +111,7 @@ function getCookie(cname) {
     removeCookie('click')
     removeCookie('youNeedIt')
     rebirths = rebirths + 1
-    setCookie('wow', rebirths)
+    setCookie('wowg', rebirths)
     location.reload()
     }
   }
