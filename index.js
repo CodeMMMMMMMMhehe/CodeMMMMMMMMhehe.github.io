@@ -8,6 +8,10 @@ app.get('/corn',(req,res) => {
     res.sendFile(__dirname + "/corn.html")
     console.log(req.ip + " likes corn!")
 })
+app.get('/pug',(req,res) => {
+    res.sendFile(__dirname + "/pug.html")
+    console.log(req.ip + " likes pugs!")
+})
 app.get('/error',(req,res) => {
     res.sendFile(__dirname + "/error.html")
     console.log(req.ip + " had an error!")
